@@ -7,9 +7,9 @@ function Home() {
 
   const [users, setUsers] = useState([])
 
-  const inputName = useRef()
-  const inputAge = useRef()
-  const inputEmail = useRef()
+  const inputName   = useRef()
+  const inputAge    = useRef()
+  const inputEmail  = useRef()
   
   async function getUsers() {
     const usersFromApi = await api.get('/usuarios')
